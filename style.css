@@ -1,0 +1,415 @@
+:root {
+    --primary: #5e0b87;
+    --secondary: #f5f3f8;
+    --dark: #2c003e;
+    --light: #ffffff;
+    --accent: #ffb703;
+     --bg-color: #ffffff;
+    --text-color: #222222;
+    --card-color: #f4f4f4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    transition: 0.4s ease;
+}
+
+nav {
+    background: var(--dark);
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: var(--light);
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover, nav a.active {
+    color: var(--accent);
+}
+
+
+.hero-clean {
+    position: relative;
+    height: 100vh;
+   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+            url('woxsenuni1.jpg.png') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-clean .overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+.hero-clean .hero-content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+}
+
+.hero-clean .logo {
+    width: 370px;
+    margin-bottom: 29px;
+}
+
+.hero-clean h1 {
+    font-size: 52px;
+    margin-bottom: 15px;
+}
+
+.hero-clean p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: var(--primary);
+    color: var(--light);
+    text-decoration: none;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: var(--accent);
+    transform: scale(1.05);
+}
+
+
+.video-section {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.video-section h2 {
+    font-size: 36px;
+    color: var(--primary);
+    margin-bottom: 40px;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+}
+
+
+.section {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.section h2 {
+    margin-bottom: 30px;
+    color: var(--primary);
+}
+
+.section p {
+    margin-bottom: 20px;
+}
+
+
+.cards {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    padding: 15px;
+    color: var(--primary);
+}
+
+.card p {
+    padding: 0 15px 20px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+
+
+
+
+.map-section{
+text-align:center;
+padding:40px;
+background:#f5f5f5;
+}
+
+.map-container{
+width:90%;
+margin:auto;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+
+form {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button[type="submit"]:hover {
+    background: var(--accent);
+    transform: scale(1.05);
+}
+
+
+.extra-info {
+    padding: 50px 10%;
+    background: #f5f5f5;
+    text-align: center;
+}
+
+.info-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.info-box {
+    background: white;
+    padding: 20px;
+    width: 220px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.info-box:hover {
+    transform: translateY(-5px);
+}
+
+.info-box h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+
+footer {
+    background: var(--dark);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+
+@media(max-width:768px){
+    .hero-clean h1 { font-size: 36px; }
+    .hero-clean p { font-size: 16px; }
+    .video-container iframe { height: 250px; }
+    .cards { flex-direction: column; align-items: center; }
+    .about-container { flex-direction: column; text-align: center; }
+    .mv-box, .stat-box, .info-box { width: 90%; }
+}
+
+.section img {
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+
+
+.top-images{
+display:flex;
+justify-content:center;
+gap:20px;
+margin-top:20px;
+}
+
+.top-images img{
+width:300px;
+border-radius:10px;
+}
+
+.third-image{
+text-align:center;
+margin-top:20px;
+}
+
+.third-image img{
+width:60%;
+max-width:600px;
+border-radius:10px;
+}
+
+
+
+.dark-mode {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --card-color: #1e1e1e;
+}
+
+
+.card {
+    background-color: var(--card-color);
+    width: 300px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: 0.3s;
+    text-align: center;
+}
+
+
+
+
+#infoBtn {
+    display: block;
+    width: fit-content;
+    margin: 25px auto;
+    padding: 12px 30px;
+    background: linear-gradient(45deg, var(--primary), #7b2cbf);
+    color: var(--light);
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#infoBtn:hover {
+    transform: scale(1.05);
+    background: var(--accent);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+
+.section h1 {
+    margin-top: 30px;
+    font-size: 28px;
+    color: var(--primary);
+}
+
+
+@media(max-width:768px){
+    .section img:nth-child(5),
+    .section img:nth-child(6) {
+        width: 90%;
+    }
+
+    .section img:nth-child(7) {
+        width: 90%;
+    }
+}
+
+
+.dark-mode .section {
+    background: #121212;
+}
+
+.dark-mode .extra-info {
+    background: #1a1a1a;
+}
+
+.dark-mode .info-box {
+    background: #1e1e1e;
+    color: white;
+}
+
+.dark-mode form {
+    background: #1e1e1e;
+}
+
+.dark-mode input,
+.dark-mode textarea {
+    background: #2a2a2a;
+    color: white;
+    border: 1px solid #444;
+}
+
+.dark-mode .map-section {
+    background: #121212;
+}
+
+.dark-mode footer {
+    background: #000;
+}
+html{
+scroll-behavior:smooth;
+}
+.scroll-arrow{
+font-size:28px;
+display:block;
+margin-top:20px;
+animation:arrowMove 1s infinite;
+}
+
+@keyframes arrowMove{
+0%{transform:translateY(0);}
+50%{transform:translateY(6px);}
+100%{transform:translateY(0);}
+}
