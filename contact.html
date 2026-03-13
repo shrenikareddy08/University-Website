@@ -1,74 +1,65 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Contact - Woxsen University</title>
+<title>Contact - ABC University</title>
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<nav> 
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="courses.html">Courses</a>
-    <a href="campus.html">Campus Life</a>
-     <a href="placement.html">Placements</a>
-    <a href="contact.html">Contact</a>
-   <button id="themeToggle">🌙</button>
-   
- </nav>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="courses.html">Courses</a>
+<a href="campus.html">Campus Life</a>
+<a href="placement.html">Placements</a>
+<a href="contact.html">Contact</a>
+
+<button id="themeToggle">🌙</button>
+</nav>
+
 
 <section class="section">
+
 <h2>Contact Us</h2>
 
-
 <form onsubmit="return validateForm()">
-<input type="text" id="name" placeholder="Full Name" required>
-<input type="email" id="email" placeholder="Email" required>
-<textarea placeholder="Your Message"></textarea>
-<button type="submit">Submit</button>
-</form>
-</section>
-<section class="extra-info">
-    <h2>More Information</h2>
-    <div class="info-container">
-    <div class="info-box">
-        <h3>Our Address</h3>
-        <p>Woxsen University<br> Hyderabad, Telangana<br>India - 502345</p>
-    </div>
-    <div class="info-box">
-        <h3>Phone</h3>
-        <p>+91 9710067119</p>
-    </div>
-    <div class="info-box">
-        <h3>Email</h3>
-        <p>info@woxsenuniversity.edu</p>
-    </div>
-    <div class="info-box">
-        <h3>Working Hours</h3>
-        <p>Monday - Friday: 9 AM - 5 PM</p>
-    </div>
-</div>
 
-</section> 
+<input type="text" id="name" placeholder="Full Name" required>
+
+<p id="previewName"></p>
+
+<input type="email" id="email" placeholder="Email" required>
+
+<textarea placeholder="Your Message"></textarea>
+
+<button type="submit">Submit</button>
+
+</form>
+
+</section>
+
 
 <section class="map-section">
+
 <h2>Our Location</h2>
 
 <div class="map-container">
-<iframe 
+
+<iframe
 src="https://www.google.com/maps?q=Woxsen%20University%20Hyderabad&output=embed"
-width="100%" 
-height="400" 
-style="border:0;" 
-allowfullscreen="" 
-loading="lazy">
+width="100%"
+height="400">
 </iframe>
+
 </div>
 
 </section>
 
-<footer>© 2026 Woxsen University</footer>
+
+<footer>© 2026 ABC University</footer>
 
 <script src="script.js"></script>
+
 </body>
 </html>
